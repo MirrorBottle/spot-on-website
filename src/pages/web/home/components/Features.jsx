@@ -83,7 +83,11 @@ export default function HomeFeatures() {
         <Grid gutter={80}>
           <Col span={12} md={5}>
             <Title className={classes.title} order={2}>
-            Fitur Keren, Bikin Bisnismu Makin Oke
+            Fitur <Text component="span" variant="gradient" gradient={{ from: 'brand', to: 'blue' }} inherit>
+            Keren
+          </Text>, Bikin Bisnismu Makin <Text component="span" variant="gradient" gradient={{ from: 'brand', to: 'blue' }} inherit>
+            Oke
+          </Text>
             </Title>
             <Text c="dimmed" fz="xl">
               Stok terkelola baik, penjualan lancar, laporan komprehensif, pemesanan praktis. SpotOn, solusi terlengkap untuk sukses bisnismu

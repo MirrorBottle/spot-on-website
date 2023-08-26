@@ -187,34 +187,36 @@ export function WebFooter() {
   });
 
   return (
-    <footer className={classes.footer}>
-      <Container className={classes.inner}>
-        <div className={classes.logo}>
-          <img src={Logo} alt="Logo" height="100" />
+    <>
+      <footer className={classes.footer}>
+        <Container className={classes.inner}>
+          <div className={classes.logo}>
+            <img src={Logo} alt="Logo" height="100" />
 
-          <Text size="xs" color="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+            <Text size="xs" color="dimmed" className={classes.description}>
+              Build fully functional accessible web applications faster than ever
+            </Text>
+          </div>
+          <div className={classes.groups}>{groups}</div>
+        </Container>
+        <Container className={classes.afterFooter}>
+          <Text color="dimmed" size="sm">
+            © 2020 spot-on.my.id All rights reserved.
           </Text>
-        </div>
-        <div className={classes.groups}>{groups}</div>
-      </Container>
-      <Container className={classes.afterFooter}>
-        <Text color="dimmed" size="sm">
-          © 2020 spot-on.my.id All rights reserved.
-        </Text>
 
-        <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
-            <IconBrandTwitter size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-        </Group>
-      </Container>
-    </footer>
+          <Group spacing={0} className={classes.social} position="right" noWrap>
+            <ActionIcon size="lg">
+              <IconBrandTwitter size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size="lg">
+              <IconBrandYoutube size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size="lg">
+              <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+          </Group>
+        </Container>
+      </footer>
+    </>
   );
 }

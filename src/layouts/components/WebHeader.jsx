@@ -70,9 +70,8 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
     paddingBottom: theme.spacing.xl,
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+      }`,
   },
 
   hiddenMobile: {
@@ -184,7 +183,8 @@ export function WebHeader() {
 
           <Group className={classes.hiddenMobile}>
             <Button variant="default" size="lg">Login</Button>
-            <Button size="lg">Coba Gratis</Button>
+            <Button size="lg" variant="gradient"
+              gradient={{ from: 'brand', to: 'blue' }}>Coba Gratis</Button>
           </Group>
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
